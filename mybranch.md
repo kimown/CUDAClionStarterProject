@@ -5,9 +5,10 @@
 
     #file_dir = mkdtemp()
     #file_dir = mkdtemp(prefix="/home/google/CLionProjects/CUDAClionStarterProject/vs/tmp")
-    print("cache_dir")
-    print(cache_dir)
-    file_dir = "/home/google/CLionProjects/CUDAClionStarterProject/vs/cache/tmp"
+    #print("cache_dir")
+    #print(cache_dir)
+    #file_dir = "/home/google/CLionProjects/CUDAClionStarterProject/vs/cache/tmp"
+    file_dir = os.path.join(cache_dir, "tmp")
     file_root = "kernel"
 ```
 
