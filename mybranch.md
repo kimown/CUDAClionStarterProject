@@ -19,3 +19,9 @@ CMake| Debug | CMake options:
 
 -DCMAKE_CUDA_COMPILER=/usr/local/cuda-12.2/bin/nvcc
 ```
+
+
+nvcc
+
+https://forums.developer.nvidia.com/t/nvcc-fatal-failed-to-open-output-file-tmp-tmpxft-0000/33962/2
+
