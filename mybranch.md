@@ -11,6 +11,13 @@
     file_root = "kernel"
 ```
 
+```
+cd vs
+unset NODE_OPTIONS
+code .
+```
+
+
 clion
 File | Settings | Build, Execution, Deployment
 CMake| Debug | CMake options:
