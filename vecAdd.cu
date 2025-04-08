@@ -55,7 +55,7 @@ int doVecAdd() {
     vecAdd <<<1, 1024 >>>(d_a, d_b, d_c, size);
 
     cudaEventRecord(stop_kernel);
-    gpuErrchk(cudaPeekAtLastError());
+    //gpuErrchk(cudaPeekAtLastError());
 
     cudaMemcpy(c, d_c, size*sizeof(float), cudaMemcpyDeviceToHost);
 
