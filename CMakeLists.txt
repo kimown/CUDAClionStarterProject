@@ -3,7 +3,7 @@ project(CUDA_Test_Clion LANGUAGES CXX CUDA)
 project(cuda_base CXX CUDA)
 
 if ($ENV{CLION_IDE})
-    include_directories("C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v8.0\\include")
+    include_directories("/usr/local/cuda-12.2/include")
 endif ()
 
 set(CMAKE_CXX_STANDARD 11)
@@ -11,7 +11,7 @@ add_library(cuda_base
         cudaMain.cu cudaMain.h
         vecAdd.cu vecAdd.h
         dummy.cpp cudaHeaders.h)
-target_compile_features(cuda_base PUBLIC cxx_std_11)
+#target_compile_features(cuda_base PUBLIC cxx_std_17)
 set_target_properties( cuda_base
         PROPERTIES CUDA_SEPARABLE_COMPILATION ON
         )
